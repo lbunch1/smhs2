@@ -2,7 +2,7 @@
   <div class="flex min-h-screen flex-col justify-between">
     <Heading />
     <div
-      class="mt-14 pb-8 bg-[url('assets/img/background.svg')] bg-cover bg-no-repeat bg-bottom mt-auto"
+      class="mt-14 pb-8 bg-[url('assets/img/background.svg')] bg-cover bg-no-repeat bg-bottom"
       >
       <NuxtLayout>
         <NuxtPage />
