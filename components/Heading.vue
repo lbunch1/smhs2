@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 flex flex-row nav z-50">
+  <div class="px-4 py-3 flex flex-row nav z-50">
     <nuxt-link to="/"
       ><img src="../assets/img/smhs.svg" alt="logo" class="w-20 mx-3"
     /></nuxt-link>

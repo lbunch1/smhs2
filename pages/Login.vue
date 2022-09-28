@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content mt-22">
     <h1>Log in</h1>
     <form id="login" class="flex flex-col items-center gap-4 p-12">
       <input type="email" id="email" class="p-2 rounded-md w-80 drop-shadow-md" placeholder="e-mail" v-model="email" required />
@@ -51,13 +51,3 @@ async function signInWithEmail(e) {
   }
 
 </script>
-
-<style>
-  .sign-in:invalid {
-    background-color: var(--light);
-  }
-
-  .sign-in:valid {
-    background-color: var(--primary);
-  }
-</style>
