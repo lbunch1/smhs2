@@ -1,5 +1,5 @@
 <template>
-  <div class="content mt-22">
+  <div class="content mt-36">
     <h1>Sign Up</h1>
     <p class="p-4">Some of the content on this site is intended only for attendees of the San Marino High School class of 1970 reunions. Sign up here to be granted access.</p>
     <form id="login" class="flex flex-col items-center gap-4 p-12">

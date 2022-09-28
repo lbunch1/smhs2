@@ -1,5 +1,5 @@
 <template>
-  <div class="content mt-22">
+  <div class="content mt-36">
     <h1>Log in</h1>
     <form id="login" class="flex flex-col items-center gap-4 p-12">
       <input type="email" id="email" class="p-2 rounded-md w-80 drop-shadow-md" placeholder="e-mail" v-model="email" required />
