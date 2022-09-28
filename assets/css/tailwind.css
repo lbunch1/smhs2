@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary: #0065b8;
+  --primary-alpha: #0065b8c2;
+  --soft: #a3cef1;
+  --light: #e7ecef;
+  --dark: #8b8c89;
+  --blackish: #1b2021;
+  --dark-primary: #004f91;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--blackish);
+  font-family: 'Public Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  @apply text-4xl
+}
+
+.nav-link {
+  font-family: 'Public Sans', sans-serif;
+  @apply px-3 py-2 sm:py-1 text-light font-bold hover:text-soft cursor-pointer text-xl sm:text-lg;
+}
+.nav {
+  @apply fixed top-0 left-0 right-0 bg-primary-alpha backdrop-blur-md;
+}
+.content {
+  @apply mx-auto flex flex-col justify-center items-center sm:px-6 md:max-w-[768px] lg:max-w-[1024px];
+}
+.card {
+  @apply bg-white rounded-2xl drop-shadow-lg mx-2 mt-3;
+}
+
+.card-header {
+  @apply flex flex-grow rounded-t-2xl py-8 px-12 bg-soft text-white font-bold;
+}
+
+.card-body {
+  @apply py-8 px-12 text-lg;
+}
+
+.snippet {
+  @apply bg-white rounded-2xl drop-shadow-lg mx-3 mt-6 max-w-sm;
+}
+.jumbotron {
+  height: 600px;
+  width: 100%;
+  @apply flex justify-center items-center;
+}
+.jumbo-banner {
+  @apply p-4 bg-primary-alpha backdrop-blur-md text-white rounded-lg drop-shadow-lg text-center;
+}
