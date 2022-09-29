@@ -10,7 +10,7 @@
       emailCheck.email 
       && passwordLength.value
       && passwordMatch.conf
-      && passwordLength.value > 6
+      && passwordLength.value > 5
       && passwordMatch.pass === passwordMatch.conf
       " id="signin" type="submit" @click="signInWithEmail" class="p-2 rounded-md w-80 bg-primary drop-shadow-md text-white">Sign Up</button>
       <div v-else class="p-2 rounded-md w-80 bg-light drop-shadow-md text-white text-center cursor-default">Sign Up</div>

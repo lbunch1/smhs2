@@ -1,14 +1,16 @@
 <template>
   <div class="flex min-h-screen flex-col justify-between">
     <Heading />
-    <div
-      class="mt-14 pb-8 bg-[url('assets/img/background.svg')] bg-cover bg-no-repeat bg-bottom"
-      >
-      <NuxtLayout>
-        <NuxtPage />
-      </NuxtLayout>
+    <div class="mt-14">
+      <div
+        class="pb-8 bg-[url('assets/img/background.svg')] bg-cover bg-no-repeat bg-bottom"
+        >
+        <NuxtLayout>
+          <NuxtPage />
+        </NuxtLayout>
+      </div>
+      <Footer />
     </div>
-    <Footer />
   </div>
 </template>
 <script setup>
@@ -20,7 +22,7 @@
       { name: 'San Marino High School class of 1970 reunion', content: 'Info on past and future reunions will be posted here.'},
     ],
     link: [
-      { rel: 'icon', href: 'ico.svg', type: 'image/svg+xml'}
+      { rel: 'icon', href: '/img/ico.svg', type: 'image/svg+xml'}
     ]
   })
 </script>

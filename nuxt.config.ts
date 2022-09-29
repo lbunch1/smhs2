@@ -1,7 +1,10 @@
 
 
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/supabase'],
+  modules: [
+    '@nuxtjs/supabase',
+    'nuxt-windicss'
+  ],
   css: ["~/assets/css/tailwind.css"],
   build: {
     postcss: {
