@@ -15,6 +15,9 @@
 </template>
 
 <script setup>
+  useHead({
+    title: 'Log In'
+  })
 const supabase = useSupabaseClient()
 
 const email = ref("");

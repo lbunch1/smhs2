@@ -22,7 +22,7 @@
       { name: 'San Marino High School class of 1970 reunion', content: 'Info on past and future reunions will be posted here.'},
     ],
     link: [
-      { rel: 'icon', href: '/img/ico.svg', type: 'image/svg+xml'}
+      { rel: 'icon', href: 'assets/img/ico.svg', type: 'image/svg+xml'}
     ]
   })
 </script>

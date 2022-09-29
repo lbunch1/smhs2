@@ -9,55 +9,39 @@
     <div class="content">
       <div class="card">
         <div class="card-header">
-          <h1>Title</h1>
+          <h1>The 50ish Reunion</h1>
         </div>
-        <p class="card-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quibusdam
-          nihil illo quasi minima saepe, nam, dolores ex, consequatur quos
-          explicabo quae corporis sit quam voluptate delectus neque nostrum
-          doloremque. Tempora dolore quibusdam excepturi. Ducimus eligendi totam
-          accusamus tenetur omnis? Quia minima vitae quam laudantium voluptas
-          culpa maiores labore sint placeat soluta, quibusdam atque laborum
-          possimus incidunt. Delectus minima deserunt modi sed architecto harum
-          facilis, nihil quis? Unde quis ab maiores. Ea amet a veritatis sapiente
-          rerum iure voluptas excepturi eveniet nesciunt, optio reiciendis, neque
-          saepe totam officiis impedit laborum tempore eos architecto omnis eum
-          enim, in maiores doloremque? Possimus incidunt unde vel totam,
-          perferendis sapiente officia dolorum iusto debitis repellendus aliquam
-          alias dolor, dicta officiis consequuntur? Ad in veritatis iusto itaque
-          perspiciatis qui rerum repellat, mollitia inventore dolorum harum sed
-          dolore? Delectus rerum similique quidem obcaecati eius aspernatur optio
-          commodi consequuntur libero laboriosam. Exercitationem ab rem iure
-          perferendis facere officiis quo? Harum eum aliquam pariatur perferendis
-          voluptates distinctio quisquam laboriosam. Doloribus dignissimos veniam
-          esse nemo deserunt quae voluptates tempora? Natus veniam suscipit vero
-          ipsa reiciendis exercitationem ab esse mollitia ipsam perspiciatis
-          aperiam eveniet rerum asperiores deleniti, velit deserunt quae soluta?
-          Et unde provident porro iure voluptatibus nesciunt voluptatum optio.
-        </p>
+        <div class="card-body">
+          <h1>Sept 9-11, 2022 • Newport Beach, California</h1>
+          <h2>It's a wrap!</h2>
+          <p>We started off Friday, Sept. 9th at the home of Terry and Jan Shea in Costa Mesa. It was a casual, hosted cocktail party with wonderful appetizers, beverages, and conversation.</p>
+          <p>Saturday, Sept. 10th was at the American Legion post in Newport Beach. Everyone enjoyed appetizers, dinner, a no-host bar and lots of socializing on the patio overlooking the marina.</p>
+          <p>The sun came out on Sunday, Sept. 11th at Lynne’s beachfront rental for light refreshments and fond farewells.</p>
+          <p>Photos from the weekend will be available soon. If you took pictures and would like them posted, please <nuxt-link to="Contact" class="link">send them in!</nuxt-link></p>
+        </div>
       </div>
       <div class="flex flex-wrap justify-center items-center">
         <div class="snippet">
-          <p class="card-body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
-            animi harum vel temporibus atque possimus illum fugiat consequatur!
-            Doloribus officia eligendi tempore quidem atque rem! Autem, inventore
-            suscipit? In quasi suscipit optio veritatis ad modi fugiat voluptates
-            tempore hic minima esse labore, omnis quaerat dolorum odio illum?
-            Officiis, dolores corporis?
-          </p>
+          <div class="card-body">
+            <h1>Check out photos from past events!</h1>
+            <p v-if="user">Head over to <nuxt-link to="Photos" class="link">the Photo gallery</nuxt-link> to see photos from past events.</p>
+            <p v-else><nuxt-link to="Signup" class="link">Sign up here</nuxt-link> to view photos from past events. Or <nuxt-link to="Login" class="link">Log in</nuxt-link> if you are already registered.</p>
+          </div>
         </div>
         <div class="snippet">
-          <p class="card-body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
-            animi harum vel temporibus atque possimus illum fugiat consequatur!
-            Doloribus officia eligendi tempore quidem atque rem! Autem, inventore
-            suscipit? In quasi suscipit optio veritatis ad modi fugiat voluptates
-            tempore hic minima esse labore, omnis quaerat dolorum odio illum?
-            Officiis, dolores corporis?
-          </p>
+          <div class="card-body">
+            <h2>Keep an eye out for upcoming events</h2>
+            <p>We'll try to reach out to all alumni members as information becomes available but just in case, be sure to check in often</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+<script setup>
+  useHead({
+    title: 'Home'
+  })
+
+  const user = useSupabaseUser()
+</script>

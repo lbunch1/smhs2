@@ -23,6 +23,9 @@
 </template>
 
 <script setup>
+  useHead({
+    title: 'Sign Up'
+  })
 const supabase = useSupabaseClient()
 
 const email = ref("");

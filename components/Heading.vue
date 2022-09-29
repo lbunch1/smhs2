@@ -23,7 +23,6 @@
 </template>
 
 <script setup>
-import { SupabaseAuthClient } from '@supabase/supabase-js/dist/module/lib/SupabaseAuthClient';
 
 const supabase = useSupabaseClient()
 
