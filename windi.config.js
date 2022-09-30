@@ -1,13 +1,17 @@
-module.exports = {
-  mode: "jit",
-  content: [
-    "./components/**/*.{vue,js}",
-    "./layouts/**/*.vue",
-    "./pages/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
-    "./*.vue"
-  ],
+import { defineConfig } from 'windicss/helpers'
+
+export default defineConfig({
+  extract: {
+    include: [
+      "./components/**/*.{vue,js}",
+      "./layouts/**/*.vue",
+      "./pages/*.vue",
+      "./plugins/**/*.{js,ts}",
+      "./nuxt.config.{js,ts}",
+      "./*.vue"
+    ],
+    exclude: ['node_modules', '.git'],
+  },
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
@@ -23,4 +27,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+})

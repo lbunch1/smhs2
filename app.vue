@@ -1,9 +1,9 @@
 <template>
-  <div class="flex min-h-screen flex-col justify-between">
+  <div class="flex min-h-screen flex-col">
     <Heading />
-    <div class="mt-14">
+    <div class="mt-14 flex flex-col min-h-screen">
       <div
-        class="pb-8 bg-[url('assets/img/background.svg')] bg-cover bg-no-repeat bg-bottom"
+        class="pb-8 flex-grow bg-image bg-cover bg-no-repeat bg-bottom "
         >
         <NuxtLayout>
           <NuxtPage />
@@ -13,9 +13,10 @@
     </div>
   </div>
 </template>
+
 <script setup>
   useHead({
-    titleTemplate: (title) => `SMHS '70::${title}'`,
+    titleTemplate: (title) => `SMHS '70::${title}`,
     viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
     charset: 'utf-8',
     meta: [
@@ -26,3 +27,8 @@
     ]
   })
 </script>
+<style>
+  .bg-image {
+    background-image: url('assets/img/background.svg');
+  }
+</style>

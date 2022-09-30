@@ -3,17 +3,17 @@
     <h1>Sign Up</h1>
     <p class="p-4">Some of the content on this site is intended only for attendees of the San Marino High School class of 1970 reunions. Sign up here to be granted access.</p>
     <form id="login" class="flex flex-col items-center gap-4 p-12">
-      <input type="email" id="email" class="p-2 rounded-md w-80 drop-shadow-md" placeholder="e-mail" v-model="email" required />
-      <input type="password" min="6" id="password" class="p-2 rounded-md w-80 drop-shadow-md" placeholder="password" v-model="password" required />
-      <input type="password" min="6" id="confirm_password" class="p-2 rounded-md w-80 drop-shadow-md" placeholder="confirm password" v-model="confirmPassword" required />
+      <input type="email" id="email" class="p-2 rounded-md w-80 shadow-md" placeholder="e-mail" v-model="email" required />
+      <input type="password" min="6" id="password" class="p-2 rounded-md w-80 shadow-md" placeholder="password" v-model="password" required />
+      <input type="password" min="6" id="confirm_password" class="p-2 rounded-md w-80 shadow-md" placeholder="confirm password" v-model="confirmPassword" required />
       <button v-if="
       emailCheck.email 
       && passwordLength.value
       && passwordMatch.conf
       && passwordLength.value > 5
       && passwordMatch.pass === passwordMatch.conf
-      " id="signin" type="submit" @click="signInWithEmail" class="p-2 rounded-md w-80 bg-primary drop-shadow-md text-white">Sign Up</button>
-      <div v-else class="p-2 rounded-md w-80 bg-light drop-shadow-md text-white text-center cursor-default">Sign Up</div>
+      " id="signin" type="submit" @click="signInWithEmail" class="p-2 rounded-md w-80 bg-primary hover:shadow-lg text-white">Sign Up</button>
+      <div v-else class="p-2 rounded-md w-80 bg-light  text-white text-center cursor-default">Sign Up</div>
     </form>
     <div class="h-20 -mt-8">
       <p v-if="passwordLength.value && passwordLength.value < 6" class="text-sm text-red-800" >Password must be at least 6 characters long.</p>

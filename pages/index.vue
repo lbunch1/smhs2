@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="jumbotron bg-[url('assets/img/home-jumbotron.jpg')] bg-cover">
+    <div class="jumbotron bg-jumbo bg-cover">
       <div class="jumbo-banner">
         <h1>San Marino High School</h1>
         <p>class of 1970</p>
@@ -45,3 +45,9 @@
 
   const user = useSupabaseUser()
 </script>
+
+<style>
+  .bg-jumbo {
+    background-image: url('../assets/img/home-jumbotron.jpg');
+  }
+</style>

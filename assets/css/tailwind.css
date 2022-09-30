@@ -46,7 +46,8 @@ h2 {
   @apply px-3 py-2 sm:py-1 text-light font-bold hover:text-soft cursor-pointer text-xl sm:text-lg;
 }
 .nav {
-  @apply fixed top-0 left-0 right-0 bg-primary-alpha backdrop-blur-md;
+  backdrop-filter: blur(15px);
+  @apply fixed top-0 left-0 right-0 bg-primary-alpha;
 }
 .content {
   @apply mx-auto flex flex-col justify-center items-center sm:px-6 md:max-w-[768px] lg:max-w-[1024px];
@@ -76,7 +77,8 @@ h2 {
   @apply flex justify-center items-center;
 }
 .jumbo-banner {
-  @apply p-4 bg-primary-alpha backdrop-blur-md text-white rounded-lg drop-shadow-lg text-center;
+  backdrop-filter: blur(15px);
+  @apply p-4 bg-primary-alpha text-white rounded-lg shadow-black/60 shadow-lg text-center;
 }
 
 .link {

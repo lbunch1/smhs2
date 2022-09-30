@@ -19,10 +19,26 @@
     },
     methods: {
       handleToggle() {
-        this.topBar = (this.topBar === "")? "translate-y-1 rotate-45" : ""
+        this.topBar = (this.topBar === "")? "rotate-top" : ""
         this.middleBar = (this.middleBar === "")? "hidden" : ""
-        this.bottomBar = (this.bottomBar === "")? "-translate-y-1 -rotate-45" : ""
+        this.bottomBar = (this.bottomBar === "")? "rotate-bottom" : ""
       }
     }
   }
 </script>
+
+<style>
+  .hidden {
+    display: hidden
+  }
+  .rotate-top {
+    transform: 
+      rotate(45deg)
+      translateY(.35em);
+  }
+  .rotate-bottom {
+    transform: 
+      rotate(-45deg)
+      translateY(-.35em);
+  }
+</style>

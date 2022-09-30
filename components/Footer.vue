@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-dark-primary flex flex-col items-center self-stretch p-6">
+  <footer class="bg-dark-primary flex flex-col items-center self-stretch p-6 bottom-0 left-0 right-0">
     <img src="../assets/img/smhs.svg" alt="logo" class="w-4/12" />
     <div class="flex flex-wrap justify-between items-stretch">
       <nav class="p-12 mx-auto">
@@ -22,7 +22,7 @@
         </ul>
       </nav>
       <div class="p-12 flex mx-auto items-center justify-center">
-        <a href="#"
+        <a href="https://www.facebook.com/groups/133430159762"
           ><img src="../assets/img/facebook.svg" alt="facebook" class="w-10"
         /></a>
       </div>
