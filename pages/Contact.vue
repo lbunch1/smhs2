@@ -9,7 +9,7 @@
             Lynne Wallenbrock Bunch<br />
             3233 Bimini Dr.<br />
             Corpus Christi, TX 78418<br />
-            <a class="link" href="mailto:lynne@acharityaffaire.com">lynne@acharityaffaire.com</a><br />
+            <a class="link" href="mailto:lynnebunch52@gmail.com">lynnebunch52@gmail.com</a><br />
             <a class="link" href="tel:+17602181687">760-218-1687</a>
           </p>
         </div>
