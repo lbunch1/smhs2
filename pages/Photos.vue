@@ -24,12 +24,12 @@ function generateAlbum(title, length) {
   let arrThumb = []
   for (let i = 1 ; i <= length ; i++) {
     let num = i.toString().padStart(3, '0')
-    let item = `../assets/photos/${title}/${title}_${num}.jpg`
+    let item = `/photos/${title}/${title}_${num}.jpg`
     arr.push(item)
   }
   for (let i = 1 ; i <= length ; i++) {
     let num = i.toString().padStart(3, '0')
-    let item = `../assets/photos/${title}/thumb/${title}_${num}_thumb.jpg`
+    let item = `/photos/${title}/thumb/${title}_${num}_thumb.jpg`
     arrThumb.push(item)
   }
   return { arr , arrThumb }
