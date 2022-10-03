@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/supabase',
-    'nuxt-windicss'
+    'nuxt-windicss',
   ],
   css: ["~/assets/css/tailwind.css"],
   windicss: {
