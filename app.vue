@@ -23,7 +23,7 @@ useHead({
       content: "Info on past and future reunions will be posted here.",
     },
   ],
-  link: [{ rel: "icon", href: "assets/img/ico.svg", type: "image/svg+xml" }],
+  link: [{ rel: "icon", href: "public/ico.svg", type: "image/svg+xml" }],
 });
 const nuxtApp = useNuxtApp();
 
