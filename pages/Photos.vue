@@ -4,9 +4,9 @@
       Photos
     </h1>
     <div v-if="user">
-      <Gallery :albumFolder="album50Sun" albumTitle="50ish Reunion - Sunday" />
-      <Gallery :albumFolder="album50Sat" albumTitle="50ish Reunion - Saturday" />
-      <Gallery :albumFolder="album40th" albumTitle="40th Reunion" />
+      <Gallery :albumFolder="album50Sun" albumTitle="40th Reunion - Sunday" />
+      <Gallery :albumFolder="album50Sat" albumTitle="40th Reunion - Saturday" />
+      <Gallery :albumFolder="album40th" albumTitle="40th Reunion - Other" />
       <Gallery :albumFolder="album25th" albumTitle="25th Reunion" />
       <Gallery :albumFolder="albumMisc" albumTitle="Misc" />
     </div>

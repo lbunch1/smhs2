@@ -22,7 +22,7 @@
         class="bg-black/80 top-0 right-0 bottom-0 left-0 z-50 fixed"
         @click="hideModal"
       ></div>
-      <div class="flex flex-col">
+      <div class="flex flex-col -mt-10">
         <button @click="hideModal" class="z-99">
           <svg
             xmlns="http://www.w3.org/2000/svg"
