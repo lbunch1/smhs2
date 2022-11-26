@@ -4,6 +4,7 @@
       Photos
     </h1>
     <div v-if="user">
+      <Gallery :albumFolder="real50" albumTitle="50th Reunion" />
       <Gallery :albumFolder="album50Sun" albumTitle="40th Reunion - Sunday" />
       <Gallery :albumFolder="album50Sat" albumTitle="40th Reunion - Saturday" />
       <Gallery :albumFolder="album40th" albumTitle="40th Reunion - Other" />
@@ -36,6 +37,7 @@ function generateAlbum(title, length) {
   }
   return { arr , arrThumb }
 }
+const real50 = generateAlbum('real50', 30)
 const album50Sun = generateAlbum('50ishSun', 28)
 const album50Sat = generateAlbum('50ishSat', 154)
 const album40th = generateAlbum('40th', 38)
